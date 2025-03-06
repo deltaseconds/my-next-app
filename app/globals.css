@@ -7,13 +7,13 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #242424;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #3f3f3f;
   }
 }
 
@@ -21,4 +21,171 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  transition: color 12s, font-size 12s;
+  -webkit-transition: color 12s, font-size 12s;
+   -moz-transition: color 12s, font-size 12s;
+     -o-transition: color 12s, font-size 12s;
+        transition: color 12s, font-size 12s;
+}
+
+nav {
+  background-color: #735cb3;
+  padding: 1em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1em;
+  font-family: "Lato", sans-serif;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: double;
+  font-weight: bolder;
+}
+
+#search {
+  background-color: white;
+  color: black;
+  font-size: xx-small;
+  height: 75%;
+  border-radius: 5px;
+}
+
+.register-form {
+  position: absolute;
+  font-family: "Lato", "sans-serif";
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  transform: translate(-50%, -50%);
+  border: #735cb3 2px solid;
+  border-radius: 10px;
+  background-color: #735cb3;
+  color: white;
+  border-width: 10px;
+  padding: 20px;
+  filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, .5));
+}
+
+.register-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+.register-form button {
+  background-color: white;
+  color: #735cb3;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  padding: 10px;
+  border: white 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, .3)); 
+}
+.register-form .form-group {
+  margin-bottom: 15px;
+}
+.register-form .redirect {
+  margin-top: 50px;
+}
+.register-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 10px;
+  
+}
+
+.register-form input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: #9175dd;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, .3)); 
+}
+
+.register-form input:focus {
+  outline: none;
+}
+
+.register-form button:hover {
+  background-color: #735cb3;
+  color: white;
+}
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }
