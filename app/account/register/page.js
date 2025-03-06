@@ -18,9 +18,7 @@ export default function Register() {
 
   return (
     <div className="register-form">
-      <head>
         <title>VENTURIZE - Register</title>
-      </head>
       <h1>REGISTER</h1>
       <form onSubmit={handleSubmit} >
         <div>

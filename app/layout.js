@@ -20,6 +20,9 @@ export default function Layout({ children }) {
               <li><a href="/account">ACCOUNT</a></li>
             </ul>
           </nav>
+          <footer>
+            <p>© 2025 DELTASECONDS</p>
+          </footer>
           <div className="background"></div>
           {children}
         </body>

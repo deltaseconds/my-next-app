@@ -1,0 +1,133 @@
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* Website starts here */
+.container {
+    position: absolute;
+    font-family: "Lato", "sans-serif";
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    transform: translate(-50%, -50%);
+    border: #735cb3 2px solid;
+    border-radius: 10px;
+    background-color: #735cb3;
+    color: white;
+    border-width: 10px;
+    padding: 20px;
+    filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, .5));
+}
+
+.container h1 {
+    font-size: 2em;
+    font-weight: 900;
+    filter: drop-shadow(0px 3px 0px rgba(0, 0, 0, .25));
+}
+
+.container p {
+    font-size: 15px;
+    filter: drop-shadow(0px 2px 0px rgba(0, 0, 0, .25));
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.2);
+}
+
+.fword {
+    transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+    -moz-transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease; /* Firefox 4 */
+    -webkit-transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease; /* Safari and Chrome */
+    -o-transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+}
+
+.fword:hover {
+    color: red;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.container img {
+    filter: drop-shadow(0px 3px 0px rgba(0, 0, 0, .25));
+}
+
+.redirector {
+    transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+    -moz-transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease; /* Firefox 4 */
+    -webkit-transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease; /* Safari and Chrome */
+    -o-transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+}
+
+.redirector:hover {
+    font-size: 20px;
+    font-display: bold;
+}

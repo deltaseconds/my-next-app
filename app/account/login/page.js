@@ -17,9 +17,7 @@ export default function Login() {
   return (
       
       <div className="register-form">
-      <head>
         <title>VENTURIZE - Login</title>
-      </head>
       <h1>LOGIN</h1>
       <form onSubmit={handleSubmit} >
         <div>
