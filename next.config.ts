@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
     MYSQL_DATABASE: 'your_database_name',
     MYSQL_USER: 'your_username',
     MYSQL_PASSWORD: 'your_password',
+    APPLICATION_NAME: 'VENTURIZE'
   },
 };
 
