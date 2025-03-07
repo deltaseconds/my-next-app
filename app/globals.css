@@ -21,14 +21,15 @@
   font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 1em;
-  transition:font-size, color, text-decoration 0.3s ease;
-  -moz-transition:transform, font-size, color, text-decoration 0.3s ease; /* Firefox 4 */
-  -webkit-transition:font-size, color, text-decoration 0.3s ease; /* Safari and Chrome */
-  -o-transition:font-size, color, text-decoration 0.3s ease;
-  -ms-transition:font-size, color, text-decoration 0.3s ease;
+  transition: font-size 0.3s ease, color 0.3s ease, text-decoration 0.3s ease;
+  -moz-transition:transform 0.3s ease, font-size 0.3s ease, color 0.3s ease, text-decoration 0.3s ease; /* Firefox 4 */
+  -webkit-transition:font-size 0.3s ease, color 0.3s ease, text-decoration 0.3s ease; /* Safari and Chrome */
+  -o-transition:font-size 0.3s ease, color 0.3s ease, text-decoration 0.3s ease;
+  -ms-transition:font-size 0.3s ease, color 0.3s ease, text-decoration 0.3s ease;
 }
 .deltaseconds:hover {
-  transform: translate(0, -5px);
+  /* transform: translate(0, -5px); */
+  font-size: 1.1em;
   color: #d3c3ff;
   text-decoration: underline;
 }
