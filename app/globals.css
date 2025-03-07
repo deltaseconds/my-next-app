@@ -17,6 +17,22 @@
   }
 }
 
+.deltaseconds {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 1em;
+  transition:font-size, color, text-decoration 0.3s ease;
+  -moz-transition:transform, font-size, color, text-decoration 0.3s ease; /* Firefox 4 */
+  -webkit-transition:font-size, color, text-decoration 0.3s ease; /* Safari and Chrome */
+  -o-transition:font-size, color, text-decoration 0.3s ease;
+  -ms-transition:font-size, color, text-decoration 0.3s ease;
+}
+.deltaseconds:hover {
+  transform: translate(0, -5px);
+  color: #d3c3ff;
+  text-decoration: underline;
+}
+
 .background {
   position: absolute;
   inset: 0;
