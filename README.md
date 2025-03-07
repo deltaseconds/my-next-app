@@ -1,3 +1,9 @@
+## This is merely a NextJS React Learning Project
+By no means is this supposed to be of any use in any professional manner or considered to be of quality code.
+This is a pile of garbage in terms of structure and consistency
+Feel free to take a look tho
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
