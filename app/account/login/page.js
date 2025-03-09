@@ -1,25 +1,47 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 export default function Login() {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-  
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      // Handle form submission logic here
-      console.log('Username:', username);
-      console.log('Password:', password);
-    };  
-  
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const router = useRouter();
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      router.replace('/account/profile');
+    }
+  }, []);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const response = await fetch('/api/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email, password }),
+    });
+
+    const data = await response.json();
+    if (response.ok) {
+      alert(data.message);
+      localStorage.setItem('token', data.token);
+      router.replace('/account/profile');
+    } else {
+      alert(data.error);
+    }
+  };
+
   return (
-      
-      <div className="register-form">
-        <title>VENTURIZE - Login</title>
+    <div className="register-form">
+      <title>VENTURIZE - Login</title>
       <h1>LOGIN</h1>
-      <form onSubmit={handleSubmit} >
+      <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="email">E-MAIL ADDRESS</label>
           <input
@@ -54,14 +76,12 @@ export default function Login() {
             ></path>
           </svg>
         </button>
-
       </form>
       <p>
         <Link className="redirect" href="/account/register">
-          Dont have an account?
+          Don't have an account?
         </Link>
       </p>
     </div>
-    );
-  }
-  
+  );
+}

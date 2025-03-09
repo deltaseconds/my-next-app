@@ -9,11 +9,28 @@ export default function Register() {
   const [password, setPassword] = useState('');
   const [repeatpassword, setRepeatPassword] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log('Username:', username);
-    console.log('Password:', password);
+    if (password !== repeatpassword) {
+      alert('Passwords do not match!');
+      return;
+    }
+  
+    const response = await fetch('/api/register', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ username, email, password }),
+    });
+
+    const data = await response.json();
+    if (response.ok) {
+      alert(data.message);
+      // Redirect or perform any other action
+    } else {
+      alert(data.error);
+    }
   };
 
   return (
