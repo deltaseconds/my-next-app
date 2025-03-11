@@ -18,7 +18,7 @@ export default function Register() {
       setIsLoggedIn(true);
       router.replace('/account/profile');
     }
-  }, []);
+  }, [router]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

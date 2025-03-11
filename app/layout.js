@@ -33,7 +33,7 @@ export default function Layout({ children }) {
       <body>
         <nav>
           <ul>
-            <li><a href="/" id="app_name">VENTURIZE</a></li>
+            <li><a href="/ " id="app_name">VENTURIZE</a></li>
             <li><a href="/about">ABOUT</a></li>
             {!isLoggedIn && <li><a href="/account/register">REGISTER</a></li>}
             {!isLoggedIn && <li><a href="/account/login">LOGIN</a></li>}
