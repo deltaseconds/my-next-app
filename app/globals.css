@@ -358,3 +358,14 @@ nav ul li a:hover {
 }
 
 
+.music-player {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.controls button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

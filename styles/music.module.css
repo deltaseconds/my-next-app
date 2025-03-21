@@ -1,0 +1,27 @@
+.musicPlayer {
+    text-align: center;
+    margin-top: 50px;
+    border: #333 2px solid;
+    border-radius: 10px; 
+    border-width: fit-content;
+    padding: 20px;
+    border-height: fit-content;
+    background-color: #f0f0f0;
+  }
+  
+  .controls button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: purple 2px solid;
+    border-radius: 10px;
+    background-color: purple;
+    color: white;
+    transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  }
+
+    .controls button:hover {
+        background-color: white;
+        color: purple;
+    }
